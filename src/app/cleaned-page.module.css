@@ -1,0 +1,187 @@
+/* Clean CSS with only used classes for current components */
+
+/* Layout */
+.pageCustom {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Prompt', sans-serif;
+}
+
+.mainCustom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header styles */
+.header {
+  width: 100%;
+  background: #ffffff;
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.headerInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+.logoWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: #6cc24a;
+  text-decoration: none;
+}
+
+.nav a.active {
+  color: #6cc24a;
+  border-bottom: 2px solid #6cc24a;
+}
+
+.headerBtns {
+  display: flex;
+  gap: 10px;
+}
+
+.loginBtn {
+  border: 2px solid #6cc24a;
+  background: transparent;
+  color: #6cc24a;
+  border-radius: 4px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.loginBtn:hover {
+  background: #6cc24a;
+  color: white;
+}
+
+/* Hero section styles */
+.hero {
+  background-color: white;
+  padding: 80px 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.heroSub {
+  color: #6cc24a;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  color: #333;
+}
+
+.heroDesc {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.heroSubDesc {
+  color: #666;
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Search Box Area (for the view behind hero) */
+.searchBoxWrap {
+  background: url('/images/pool-bg.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.searchBox {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.verifyLogos {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.verifyText {
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Footer styles */
+.footerCustom {
+  background: #ffffff;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #eaeaea;
+}
+
+.footerText {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .headerInner {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 20px;
+  }
+  
+  .nav {
+    gap: 15px;
+  }
+}
