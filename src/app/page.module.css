@@ -1174,3 +1174,78 @@ a.secondary {
   stroke-width: 2px;
 }
 
+/* ผมใส่ความสวยงามใว้ตรงนี้นะครับ */
+.e-con-inner {
+  padding: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.536); 
+  background-blend-mode: darken; 
+  color: white; 
+}
+
+.shape-bottom {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  position: relative;
+  left: -1%;
+  transform: rotate(180deg);
+  top: 25px;
+}
+
+.shape-fill {
+  fill: #ffffff;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-25 {
+  opacity: 0.25;
+}
+
+.heading h2 {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.text-editor p {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: #00c300;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #009900;
+}
+
+.facebook-widget {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
