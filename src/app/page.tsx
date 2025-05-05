@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import View from "@/components/view";
 import Howto from "@/components/Howto";
 import Footer from "@/components/Footer";
+import Low from "@/components/low"; 
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <View />
         <Howto />
+        <Low />
       </main>
       <Footer />
     </div>
