@@ -8,13 +8,15 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <div className={styles.pageCustom}>
-      <Header />
-      <main className={styles.mainCustom}>
-        <Hero />
-        <View />
-        <Howto />
-      </main>
-      <Footer />
+      <div className={styles.container}>
+        <Header />
+        <main className={styles.mainCustom}>
+          <Hero />
+          <View />
+          <Howto />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }

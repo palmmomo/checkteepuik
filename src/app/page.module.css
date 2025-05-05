@@ -16,6 +16,101 @@
   font-family: var(--font-geist-sans);
 }
 
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.howtoContainer {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background: transparent;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.howtoTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.howtoSteps {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.howtoStep {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.stepCheck {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #4CAF50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  font-size: 16px;
+  color: #4CAF50;
+  background: white;
+}
+
+.stepText {
+  font-size: 1.1rem;
+  color: #333;
+  flex: 1;
+  font-weight: 500;
+}
+
+.howtoIconItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+}
+
+.howtoIconItem img {
+  width: 130%;
+  height: 160px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.howtoIconItem div {
+  margin-top: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  padding: 0 10px;
+  word-wrap: break-word;
+}
+
+.howtoIconItem img:hover {
+  transform: scale(1.05);
+}
+
 @media (prefers-color-scheme: dark) {
   .page {
     --gray-rgb: 255, 255, 255;
@@ -1018,23 +1113,28 @@ a.secondary {
 .statsContainer {
   display: flex;
   justify-content: center;
-  gap: 80px;
-  margin-top: 20px;
-  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 5px;
 }
 
-.statItem {
-  text-align: center;
+.statBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .statNumber {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: bold;
   color: #333;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-.statText {
+.statLabel {
+  font-size: 1.1rem;
   color: #666;
-  font-size: 1rem;
 }
