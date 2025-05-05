@@ -4,6 +4,8 @@ import Hero from "@/components/Hero";
 import View from "@/components/view";
 import Howto from "@/components/Howto";
 import Footer from "@/components/Footer";
+import Box3 from "@/components/IdentityVerificationSection";
+import IdentityVerificationSection from "@/components/IdentityVerificationSection";
 
 export default function Home() {
   return (
@@ -13,6 +15,7 @@ export default function Home() {
         <Hero />
         <View />
         <Howto />
+        <IdentityVerificationSection/>
       </main>
       <Footer />
     </div>

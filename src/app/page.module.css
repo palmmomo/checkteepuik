@@ -1038,3 +1038,139 @@ a.secondary {
   color: #666;
   font-size: 1rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  padding: 40px;
+  gap: 40px;
+  position: relative;
+}
+
+.section {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.image {
+  width: 500px;
+  height: auto;
+  object-fit: contain;
+  margin-top: -80px; /* ดันให้ล้นขึ้นไป */
+  z-index: 0;
+  border-radius: 10px;
+}
+
+
+.section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #0f172a; /* สีเข้มเหมือนในรูป */
+}
+
+.iconBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.content {
+  flex: 1;
+}
+.icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1rem;
+  color: #334155; /* สีเทาเข้ม อ่านง่าย */
+  line-height: 1.6;
+}
+
+.imageSection {
+  flex: 1 1 400px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.imageSection img {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: #e9fde4; /* เขียว */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon svg {
+  width: 20px;
+  height: 20px;
+  fill: rgb(79, 150, 65);
+}
+
+/* YourComponent.css */
+
+.elementor-icon {
+  /* Your icon container styles */
+  display: inline-block;
+  /* Add other styling as needed */
+}
+
+.e-font-icon-svg {
+  /* Style the SVG icon itself */
+  width: 24px; /* Adjust the width */
+  height: 24px; /* Adjust the height */
+  fill: #ffffff; /* Example of color */
+}
+
+.e-fas-check-circle {
+  /* Add more styles specific to the check-circle class */
+  /* For example: */
+  stroke-width: 2px;
+}
+
