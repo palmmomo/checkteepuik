@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 import View from "@/components/view";
 import Howto from "@/components/Howto";
 import Footer from "@/components/Footer";
-
+import Four from "@/components/four"
 export default function Home() {
   return (
     <div className={styles.pageCustom}>
@@ -12,7 +12,8 @@ export default function Home() {
       <main className={styles.mainCustom}>
         <Hero />
         <View />
-        <Howto />
+        <Howto /> 
+        <Four />     
       </main>
       <Footer />
     </div>
